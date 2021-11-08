@@ -1,0 +1,17 @@
+.post-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-field {
+  width: 22%;
+  border-radius: 12px;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+input {
+  padding: 6px 12px;
+  width: 90%;
+}
