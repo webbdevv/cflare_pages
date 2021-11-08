@@ -7,8 +7,10 @@ export default function PostForm(props) {
   const [title, setT] = useState("")
   const [errors, setErrors] = useState("")
   async function createPost(){
-    const url = "https://worker_project.kyle-xu4.workers.dev/posts"
-    axios.post(url, {username, title, content})
+    const url =  "https://worker_project.kyle-xu4.workers.dev/posts"
+    let data = {username, content, title}
+    let res = await axios.post(url, data)
+    console.log(res)
   }
   return (
     <div className="post-form">

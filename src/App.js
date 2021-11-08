@@ -21,7 +21,7 @@ function App() {
       });
   }, [])
   const postElements = posts.map((p, i) => {
-    return <Card imgUrl={images[i] ? images[i] : ""} p={p} i={i}/>
+    return <Card imgUrl={images[i] ? images[i] : "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=830&q=80"} p={p} i={i}/>
   })
   return (
     <div className="app">
