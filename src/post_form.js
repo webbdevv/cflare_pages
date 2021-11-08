@@ -9,7 +9,6 @@ export default function PostForm(props) {
   async function createPost(){
     const url = "https://worker_project.kyle-xu4.workers.dev/posts"
     axios.post(url, {username, title, content})
-    let resJson = await res.json()
   }
   return (
     <div className="post-form">
